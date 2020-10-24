@@ -1,12 +1,13 @@
 
 :root {
     --primary-color: #91818A;
-    --secondary-color: #F7F5F3;
+    --secondary-color: #c0b0a1;
     --tertiary-color: #372F37;
   }
 
- .body {
+ body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
   }
 /* Navigation Bar and Header Styling */
 
@@ -62,7 +63,7 @@ header nav ul {
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: relative;
 }
   
@@ -75,3 +76,108 @@ header nav ul {
     color: white;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
+
+/* About Me Styling */
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--secondary-color);
+    justify-content: space-between;
+    padding: 15px;
+  }
+  
+  .flex-container > div {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .box-1 {
+  border-right: 1px solid;
+  padding: 5px;
+  }
+
+  .box-2 {
+      flex: wrap;
+
+  }
+  /* Work h3 */
+  .work-title {
+      text-align: center;
+      border-bottom: 1px solid;
+  }
+
+  /* Grid */
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 3 / 3; 
+        border: 5px solid black;
+        margin: 10px;
+    }
+
+    .div1 a img {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+
+    .div2 { 
+        grid-area: 1 / 3 / 2 / 5; 
+        border: 5px solid black;
+        margin: 10px;
+    }
+
+    .div2 a img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+    .div3 { 
+        grid-area: 2 / 3 / 3 / 5;
+        border: 5px solid black;
+        margin: 10px;
+    }
+
+    .div3 a img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .div4 { 
+        grid-area: 3 / 1 / 4 / 3; 
+        border: 5px solid black;
+        margin: 10px;
+    }
+
+    .div4 a img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .div5 { 
+        grid-area: 3 / 3 / 4 / 5; 
+        border: 5px solid black;
+        margin: 10px;
+    }
+
+    .div5 a img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Contact */
+    .contact-box-2 {
+        flex-grow: 1;
+    }
