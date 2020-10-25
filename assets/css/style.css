@@ -260,4 +260,19 @@ header nav ul {
 
 @media screen and (max-width: 575px)  {
 
+.box-1 {
+    font-size: 3%
+}
+
+/* HELP box 1 needs to be larger */
+
+.box-2 {
+    font-size: 3%;
+}
+
+/* HELP title not adjusting */
+
+.work-title {
+    font-size: 20px;
+}
 }
