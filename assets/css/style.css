@@ -9,6 +9,12 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--primary-color);
   }
+  /* HELP why did I do this? */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Navigation Bar and Header Styling */
 
 header {
@@ -52,11 +58,7 @@ header nav ul {
   }
 
   /* Hero and styling */
-  body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
   
   .hero-image {
     background-image: url("../images/headshot.jpg");
@@ -104,7 +106,7 @@ header nav ul {
   /* Work h3 */
   .work-title {
       text-align: center;
-      border-bottom: 1px solid;
+      text-decoration: underline;
   }
 
   /* Work Grid */
@@ -112,7 +114,7 @@ header nav ul {
   .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 10px;
@@ -221,3 +223,41 @@ header nav ul {
     .contact-box-2 {
         flex-grow: 1;
     }
+
+    /* Media Queries */
+
+    @media screen and (max-width: 980px) {
+        header {
+          padding-bottom: 0;
+          justify-content: center;
+          position: relative;
+        }
+      
+        header h1 {
+          width: 100%;
+          text-align: start;
+        }
+      
+        header nav ul {
+          margin-top: 20px;
+          width: 100%;
+          justify-content: center;
+        }
+      
+        header nav ul li a {
+          font-size: 30px;
+        }
+
+        /* Mediaquery for 768 */
+
+    @media screen and (max-width: 768px) {
+        .parent {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+    /* Mediaquery at 575 */
+
+@media screen and (max-width: 575px)  {
+
+}
