@@ -87,6 +87,8 @@ header nav ul {
     background-color: var(--secondary-color);
     justify-content: space-between;
     padding: 15px;
+    align-items: stretch;
+    flex-direction: row;
   }
   
   .flex-container > div {
@@ -97,6 +99,9 @@ header nav ul {
   .box-1 {
   border-right: 1px solid;
   padding: 5px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 20%;
   }
 
   .box-2 {
@@ -134,12 +139,9 @@ header nav ul {
         border:var(--tertiary-color) solid 1px;
         background:#fff;
     }
-/* HELP cannot get this text displaying properly, looks like it's centering from parent */
+/* HELP apply this to other centered texts */
     .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin: -30px auto 0 auto;
     }
 
     .div1 a img {
@@ -247,7 +249,7 @@ header nav ul {
         header nav ul li a {
           font-size: 30px;
         }
-
+    }
         /* Mediaquery for 768 */
 
     @media screen and (max-width: 768px) {
